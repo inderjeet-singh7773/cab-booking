@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VSR Taxi Cab Services</title>
+  <link rel="stylesheet" href="vsr modification.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <span class="logo-icon">🚗</span>
+          <span class="logo-text">VSR Cab Services</span>
+        </div>
+        <nav class="nav">
+          <a href="#services">Services</a>
+          <a href="#fleet">Our Fleet</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Promo Banner -->
+  <div class="promo-banner">
+    <span class="promo-text">⚡ Special Offer: Get 10% off on your first booking! Use code: FIRST10</span>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        <h1>Jaipur to Delhi Premium Cab Service</h1>
+        <p>Experience comfortable and safe journey with our professional drivers</p>
+        <div class="hero-buttons">
+          <button class="btn btn-primary">Book Now</button>
+          <button class="btn btn-secondary">Learn More</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Trust Badges -->
+  <div class="trust-badges">
+    <div class="container">
+      <div class="badges-container">
+        <div class="badge">
+          <span class="badge-icon">🛡️</span>
+          <span class="badge-text">Verified Drivers</span>
+        </div>
+        <div class="badge">
+          <span class="badge-icon">⭐</span>
+          <span class="badge-text">4.8/5 Customer Rating</span>
+        </div>
+        <div class="badge">
+          <span class="badge-icon">⏰</span>
+          <span class="badge-text">24/7 Support</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Booking Form -->
+  <div class="booking-section">
+    <div class="container">
+      <div class="booking-form">
+        <h2>Book Your Ride</h2>
+        <form id="cabBookingForm">
+          <div class="form-grid">
+            <div class="form-group">
+              <label>Pickup Location</label>
+              <div class="input-icon">
+                📍
+                <input type="text" name="pickup" value="Jaipur" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Drop-off Location</label>
+              <div class="input-icon">
+                📍
+                <input type="text" name="dropoff" value="Delhi" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Date</label>
+              <div class="input-icon">
+                📅
+                <input type="date" name="date" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Time</label>
+              <div class="input-icon">
+                ⏰
+                <input type="time" name="time" required>
+              </div>
+            </div>
+          </div>
+
+          <!-- Car Selection -->
+          <div class="car-selection">
+            <div class="car-card" data-car="dzire">
+              <div class="car-image">
+                <img src="https://imgd.aeplcdn.com/370x208/n/cw/ec/170173/dzire-2024-exterior-right-front-three-quarter-26.jpeg?isig=0&q=80" alt="Honda City">
+                <div class="car-price">₹3000</div>
+              </div>
+              <h3>Swift Dzire</h3>
+              <div class="car-details">
+                <span>4 Seats</span>
+              </div>
+              <ul class="car-features">
+                <li>Air Conditioning</li>
+                <li>Music System</li>
+                <li>USB Charging</li>
+              </ul>
+            </div>
+            <div class="car-card" data-car="yaris">
+              <div class="car-image">
+                <img src="https://media.istockphoto.com/id/1304732010/photo/toyota-yaris-hybrid-on-a-street.jpg?s=612x612&w=0&k=20&c=ZKgy8hgQ7BzYq3H8rYi5b5tll6tOW6KXKnJAj1yHGf8=" alt="Toyota Yaris">
+                <div class="car-price">₹3500</div>
+              </div>
+              <h3>Toyota Yaris</h3>
+              <div class="car-details">
+                <span>4 Seats</span>
+              </div>
+              <ul class="car-features">
+                <li>Leather Seats</li>
+                <li>Bluetooth</li>
+                <li>Cruise Control</li>
+              </ul>
+            </div>
+            <div class="car-card" data-car="innova">
+              <div class="car-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe9aoIkMd4mR2yDX9-fzwH5i4abkvozCtlyQ&s" alt="Toyota Innova">
+                <div class="car-price">₹5500</div>
+              </div>
+              <h3>Toyota Innova</h3>
+              <div class="car-details">
+                <span>7 Seats</span>
+              </div>
+              <ul class="car-features">
+                <li>Family Friendly</li>
+                <li>Extra Luggage Space</li>
+                <li>Premium Interior</li>
+              </ul>
+            </div>
+            
+            <!-- <div class="car-card" data-car="bus">
+              <div class="car-image">
+                <img src="data:image/jpeg;base64,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" alt="Tour Bus">
+                <div class="car-price">₹8500</div>
+              </div>
+              <h3>Tour Bus</h3>
+              <div class="car-details">
+                <span>20 Seats</span>
+              </div>
+              <ul class="car-features">
+                <li>Group Travel</li>
+                <li>Tour Guide</li>
+                <li>Entertainment System</li>
+              </ul>
+            </div>
+          </div> -->
+
+          <!-- Contact Information -->
+          <div class="contact-info">
+            <div class="form-group">
+              <label>Name</label>
+              <input type="text" name="name" required>
+            </div>
+            <div class="form-group">
+              <label>Phone</label>
+              <input type="tel" name="phone" required>
+            </div>
+            <!-- <div class="form-group">
+              <label>Email</label>
+              <input type="email" name="email" required>
+            </div>
+          </div> -->
+
+          <!-- Promo Code -->
+          <div class="promo-section">
+            <label>Promo Code</label>
+            <div class="input-icon">
+              🎟️
+              <input type="text" name="promoCode" placeholder="Enter promo code">
+            </div>
+            <div id="promoMessage" class="promo-message"></div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-book">Book Now</button>
+
+          <!-- Booking Disclaimer -->
+          <div class="booking-disclaimer">
+            <p>By booking, you agree to our terms and conditions:</p>
+            <ul>
+              <li>Free cancellation up to 6 hours before pickup</li>
+              <li>Driver details will be shared 2 hours before journey</li>
+              <li>All our cars are sanitized before every trip</li>
+              <li>Prices include GST and toll charges</li>
+            </ul>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Features -->
+  <div class="features-section">
+    <div class="container">
+      <h2>Why Choose VSR Cab Services?</h2>
+      <div class="features-grid">
+        <div class="feature">
+          <div class="feature-icon">🛡️</div>
+          <h3>Safe Journey</h3>
+          <p>Professional drivers with verified backgrounds and GPS tracking</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">⭐</div>
+          <h3>Premium Fleet</h3>
+          <p>Well-maintained luxury vehicles with modern amenities</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">⏰</div>
+          <h3>24/7 Support</h3>
+          <p>Round-the-clock customer service and roadside assistance</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">💰</div>
+          <h3>Best Rates</h3>
+          <p>Competitive pricing with no hidden charges</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <div class="footer-logo">
+            <span class="logo-icon">🚗</span>
+            <span class="logo-text">VSR Cab Services</span>
+          </div>
+          <p>Your trusted travel partner for the Jaipur-Delhi route.</p>
+          <div class="footer-license">
+            <p>License No: TRA-2025-JD-0123</p>
+            <p>Govt. Registered Company</p>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#fleet">Fleet</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact Info</h4>
+          <ul>
+            <li>📞 +91 98765 43210</li>
+            <li>📧 info@vsrcabs.com</li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 VSR Cab Services. All rights reserved.</p>
+        <p class="footer-disclaimer">
+          Disclaimer: Prices may vary based on peak hours and seasonal demand. We reserve the right to modify or cancel bookings in case of unforeseen circumstances.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Booking Confirmation Modal -->
+  <div id="confirmationModal" class="modal">
+    <div class="modal-content">
+      <h3>Booking Confirmed!</h3>
+      <p>Thank you for choosing VSR Cab Services. Your booking has been confirmed. We will contact you shortly with driver details.</p>
+      <button class="btn btn-primary" onclick="closeModal()">Close</button>
+    </div>
+  </div>
+
+  <script src="vsr modification.js"></script>
+</body>
+</html>
